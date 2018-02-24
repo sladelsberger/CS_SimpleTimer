@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "Simple Timer",
+	"version": "1.0",
+	"description": "Eyes need a break? Click this on and then DON'T TOUCH your computer again UNTIL the timer reaches the length of your desired break. ***This is on the honor's system, so remember, if you cheat you are really only cheating yourself.***",
+
+	"icons": {
+		"16": "stopwatch.png",
+		"48": "stopwatch.png"
+	},
+
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"32": "stopwatch.png"
+		}
+	},
+
+	"background": {
+		"scripts": [
+			"background.js"
+		],
+		"persistent": true
+	},
+
+	"permissions": [
+		"tabs"
+	]
+}
